@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Atlas Histologico de Patologia Oral",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

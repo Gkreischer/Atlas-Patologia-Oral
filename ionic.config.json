@@ -1,0 +1,8 @@
+{
+  "name": "Atlas Histologico de Patologia Oral",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "4793b2c1"
+}
