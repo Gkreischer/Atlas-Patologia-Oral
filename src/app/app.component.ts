@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
-    { title: '1. Alterações do Desenvolvimento das Estruturas Orais e Maxilofaciais', url: '/folder/Inbox'},
+    { title: 'Home', url: '/home'},
+    { title: '1. Alterações do Desenvolvimento das Estruturas Orais e Maxilofaciais', url: 'topico1'},
     { title: '2. Doenças da polpa e periápice', url: '/folder/Outbox' },
     { title: '3. Doenças do periodonto', url: '/folder/Favorites' },
     { title: '4. Infecções fúngicas', url: '/folder/Archived' },

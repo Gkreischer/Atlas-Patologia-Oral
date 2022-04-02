@@ -24,3 +24,65 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+$color-indicator-1: blue;
+$color-indicator-2: green;
+$color-indicator-3: yellow;
+$color-indicator-4: rgb(189, 63, 189);
+$color-indicator-5: rgb(235, 0, 109);
+
+
+p {
+    @media screen and (max-width: 767px){
+        font-size: 18px;
+    }
+    
+    font-size: 14px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+
+    li {
+        border: 1px solid rgb(158, 158, 158);
+        border-radius: 2px;
+        padding: 5px 5px;
+    }
+}
+
+.background-color-indicator-blue {
+    background-color: $color-indicator-1;
+    color: white;
+}
+
+.background-color-indicator-green {
+    background-color: $color-indicator-2;
+    color: white;
+}
+
+.background-color-indicator-yellow {
+    background-color: $color-indicator-3;
+    color: black;
+}
+
+.background-color-indicator-violet {
+    background-color: $color-indicator-4;
+    color: white;
+}
+
+.background-color-indicator-magent {
+    background-color: $color-indicator-5;
+    color: white;
+}
+
+ion-col {
+    img {
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    figcaption {
+        margin-bottom: 5px;
+    }
+}

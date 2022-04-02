@@ -3,12 +3,25 @@
     <ion-menu contentId="main-content" type="overlay">
       <ion-content>
         <ion-list id="inbox-list">
-          <ion-list-header>Faculdade Unilagos</ion-list-header>
-          <ion-note>Atlas Histológico de Patologia Bucal</ion-note>
+          <ion-grid class="ion-text-center">
+            <ion-row>
+              <ion-col>
+                <img src="assets/images/logo.jpg" alt="Logo faculdade Unilagos">
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <h3>Faculdade Unilagos</h3>
+                <ion-note>Atlas Histológico de Patologia Bucal</ion-note>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+
 
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
-            <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
-              <ion-label text-wrap>{{ p.title }}</ion-label>
+            <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false"
+              routerLinkActive="selected">
+              <ion-label text-wrap style="font-size: 16px">{{ p.title }}</ion-label>
             </ion-item>
           </ion-menu-toggle>
         </ion-list>
