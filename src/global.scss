@@ -30,6 +30,7 @@ $color-indicator-2: green;
 $color-indicator-3: yellow;
 $color-indicator-4: rgb(189, 63, 189);
 $color-indicator-5: rgb(235, 0, 109);
+$color-indicator-6: rgb(201, 201, 201);
 
 
 p {
@@ -74,6 +75,11 @@ ul {
 .background-color-indicator-magent {
     background-color: $color-indicator-5;
     color: white;
+}
+
+.background-color-indicator-grey {
+    background-color: $color-indicator-6;
+    color: black;
 }
 
 ion-col {
