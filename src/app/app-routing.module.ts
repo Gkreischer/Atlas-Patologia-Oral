@@ -8,17 +8,14 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
-  },
-  {
     path: 'home',
     loadChildren: () => import('./components/home/home/home.module').then( m => m.HomePageModule)
   },
   {
     path: 'topico1',
-    loadChildren: () => import('./components/topico1/topico1/topico1.module').then( m => m.Topico1PageModule)
-  },  {
+    loadChildren: () => import('./components/topico1/topico1.module').then( m => m.Topico1PageModule)
+  },
+  {
     path: 'topico2',
     loadChildren: () => import('./components/topico2/topico2.module').then( m => m.Topico2PageModule)
   },
@@ -65,8 +62,11 @@ const routes: Routes = [
   {
     path: 'topico13',
     loadChildren: () => import('./components/topico13/topico13.module').then( m => m.Topico13PageModule)
+  },
+  {
+    path: '**',
+    loadChildren: () => import('./components/pagina-nao-encontrada/pagina-nao-encontrada.module').then( m => m.PaginaNaoEncontradaPageModule)
   }
-
 ];
 
 @NgModule({
